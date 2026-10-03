@@ -1,6 +1,6 @@
 const pages = [
   ["About", "about.html"],
-  ["Mission", "mission.html"],
+  ["Values", "mission.html"],
   ["Officers", "officers.html"],
   ["Calendar", "calendar.html"],
   ["Merch", "merch.html"],
@@ -32,7 +32,7 @@ document.querySelector("[data-site-footer]").innerHTML = `
       <div class="footer-simple">
         <div>
           <h3>Queers &amp; Gears Motorcycle Alliance</h3>
-          <p>LGBTQ+ riders, passengers, future riders, and allies.</p>
+          <p>Queer riders, passengers, the bike-curious, and the people who ride with us.</p>
         </div>
         <div class="footer-links">
           <a href="mailto:info@queersandgears.com">Email</a>
