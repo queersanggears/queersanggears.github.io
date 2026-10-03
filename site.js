@@ -35,7 +35,7 @@ document.querySelector("[data-site-footer]").innerHTML = `
           <p>LGBTQ+ riders, passengers, future riders, and allies.</p>
         </div>
         <div class="footer-links">
-          <a href="mailto:Queersandgearsmoto@gmail.com">Email</a>
+          <a href="mailto:info@queersandgears.com">Email</a>
           <a href="https://www.instagram.com/queersandgearsmotorcycle/" target="_blank" rel="noreferrer">Instagram</a>
           <a href="https://www.tiktok.com/@queersandgears" target="_blank" rel="noreferrer">TikTok</a>
           <a href="contact.html">More contact info</a>
