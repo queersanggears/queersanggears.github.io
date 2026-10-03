@@ -348,86 +348,76 @@ h3 {
 .focus-list,
 .calendar-list,
 .social-grid,
-.officer-grid,
 .steps {
   max-width: var(--reading);
   border-top: 1px solid var(--line);
 }
 
 .officer-grid {
-  display: block;
-  max-width: 900px;
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .officer-card {
-  display: grid;
-  grid-template-columns: 170px 1fr;
-  gap: 24px;
-  padding: 22px 0;
-  border: 0;
-  border-bottom: 1px solid var(--line);
-  border-radius: 0;
-  background: transparent;
+  --officer-accent: var(--purple);
+  --officer-tint: #f8f0fc;
+  position: relative;
+  min-height: 100%;
+  padding: 30px;
+  overflow: hidden;
+  border: 1px solid var(--ink);
+  border-radius: 14px;
+  background: var(--officer-tint);
+  box-shadow: 7px 7px 0 var(--officer-accent);
 }
 
-.officer-card--text {
-  grid-template-columns: minmax(160px, 190px) minmax(0, 1fr);
-  gap: 34px;
-  padding: 30px 0;
+.officer-card::before {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 8px;
+  content: "";
+  background: var(--officer-accent);
 }
 
 .officer-heading h2 {
-  margin-bottom: 6px;
-  font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+  margin: 12px 0 20px;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -.045em;
 }
 
-.officer-heading .role,
-.officer-heading .pronouns {
-  color: var(--muted);
+.officer-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.officer-meta p {
+  margin: 0;
   font-size: .82rem;
 }
 
-.officer-heading .role {
-  margin-bottom: 7px;
+.officer-meta .role {
+  color: var(--ink);
   font-weight: 700;
 }
 
-.officer-heading .pronouns {
-  margin-bottom: 0;
-}
-
-.officer-copy p {
-  margin-bottom: 12px;
-}
-
-.officer-photo {
-  min-height: 115px;
-  display: grid;
-  place-items: center;
-  border: 1px solid var(--line);
-  background: #f2eee6;
-  color: #77716b;
-  font-size: .85rem;
-  font-weight: 650;
-}
-
-.officer-copy {
-  padding: 0;
-}
-
-.officer-copy .role {
-  margin: 0 0 4px;
-  color: var(--muted);
-  font-size: .82rem;
-  font-weight: 650;
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-.officer-copy p:last-child {
-  margin-bottom: 0;
+.officer-meta .pronouns {
   color: var(--muted);
 }
+
+.officer-bio {
+  margin: 0;
+  color: #4e4944;
+}
+
+.officer-card:nth-child(1) { --officer-accent: var(--red); --officer-tint: #fff2ef; }
+.officer-card:nth-child(2) { --officer-accent: var(--orange); --officer-tint: #fff5ea; }
+.officer-card:nth-child(3) { --officer-accent: var(--yellow); --officer-tint: #fff9dd; }
+.officer-card:nth-child(4) { --officer-accent: var(--green); --officer-tint: #effaf2; }
+.officer-card:nth-child(5) { --officer-accent: var(--blue); --officer-tint: #eef2ff; }
+.officer-card:nth-child(6) { --officer-accent: var(--purple); --officer-tint: #f8f0fc; }
 
 .steps {
   margin: 0;
@@ -617,17 +607,13 @@ span.social-link {
     gap: 18px;
   }
 
-  .officer-card {
+  .officer-grid {
     grid-template-columns: 1fr;
   }
 
-  .officer-card--text {
-    gap: 16px;
-    padding: 26px 0;
-  }
-
-  .officer-photo {
-    min-height: 160px;
+  .officer-card {
+    padding: 26px 24px;
+    box-shadow: 5px 5px 0 var(--officer-accent);
   }
 
   .event {
