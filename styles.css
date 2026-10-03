@@ -369,6 +369,10 @@ h3 {
   background: transparent;
 }
 
+.officer-card--text {
+  display: block;
+}
+
 .officer-photo {
   min-height: 115px;
   display: grid;
