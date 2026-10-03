@@ -1,6 +1,6 @@
 const pages = [
   ["About", "about.html"],
-  ["Values", "mission.html"],
+  ["Mission", "mission.html"],
   ["Officers", "officers.html"],
   ["Calendar", "calendar.html"],
   ["Merch", "merch.html"],
