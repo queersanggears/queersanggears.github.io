@@ -3,4 +3,4 @@
 Static website for [queersandgears.com](https://queersandgears.com/).
 
 Cloudflare Pages automatically deploys the `main` branch to production. Other
-branches receive preview deployments.
+branches receive preview deployments. GitHub Pages is not used.
