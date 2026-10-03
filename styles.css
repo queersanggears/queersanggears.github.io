@@ -356,6 +356,7 @@ h3 {
 
 .officer-grid {
   display: block;
+  max-width: 900px;
 }
 
 .officer-card {
@@ -370,7 +371,33 @@ h3 {
 }
 
 .officer-card--text {
-  display: block;
+  grid-template-columns: minmax(160px, 190px) minmax(0, 1fr);
+  gap: 34px;
+  padding: 30px 0;
+}
+
+.officer-heading h2 {
+  margin-bottom: 6px;
+  font-size: clamp(1.45rem, 2.5vw, 1.85rem);
+}
+
+.officer-heading .role,
+.officer-heading .pronouns {
+  color: var(--muted);
+  font-size: .82rem;
+}
+
+.officer-heading .role {
+  margin-bottom: 7px;
+  font-weight: 700;
+}
+
+.officer-heading .pronouns {
+  margin-bottom: 0;
+}
+
+.officer-copy p {
+  margin-bottom: 12px;
 }
 
 .officer-photo {
@@ -592,6 +619,11 @@ span.social-link {
 
   .officer-card {
     grid-template-columns: 1fr;
+  }
+
+  .officer-card--text {
+    gap: 16px;
+    padding: 26px 0;
   }
 
   .officer-photo {
