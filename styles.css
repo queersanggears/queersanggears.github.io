@@ -390,15 +390,6 @@ main { overflow: hidden; }
   filter: drop-shadow(0 0 9px rgb(36 247 255 / 55%));
 }
 
-.eyebrow {
-  margin: 0 0 12px;
-  color: var(--lime);
-  font-size: .78rem;
-  font-weight: 900;
-  letter-spacing: .13em;
-  text-transform: uppercase;
-}
-
 .section,
 .page-hero {
   padding: 82px 0;
