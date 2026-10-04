@@ -632,6 +632,7 @@ main { overflow: hidden; }
 .officer-card:nth-child(4) { --officer-accent: var(--green); --officer-tint: #081a12; }
 .officer-card:nth-child(5) { --officer-accent: var(--cyan); --officer-tint: #07191c; }
 .officer-card:nth-child(6) { --officer-accent: var(--pink); --officer-tint: #1c0c1c; }
+.officer-card:nth-child(7) { --officer-accent: var(--purple); --officer-tint: #150c1d; }
 
 .steps {
   margin: 0;
