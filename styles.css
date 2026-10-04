@@ -307,8 +307,7 @@ main { overflow: hidden; }
     0 0 10px rgb(36 247 255 / 12%);
 }
 
-.hero p,
-.page-hero p {
+.hero p {
   max-width: var(--reading);
   margin: 0 0 20px;
   color: var(--muted);
@@ -424,7 +423,7 @@ main { overflow: hidden; }
 
 .page-hero h1 {
   max-width: 920px;
-  margin-bottom: 24px;
+  margin-bottom: 0;
   color: var(--ink);
   font-size: clamp(4rem, 10vw, 8rem);
   letter-spacing: .018em;
